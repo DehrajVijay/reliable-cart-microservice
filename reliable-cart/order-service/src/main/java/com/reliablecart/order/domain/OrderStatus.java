@@ -1,3 +1,4 @@
+package com.reliablecart.order.domain;
 
 /**
  * The lifecycle of an order.

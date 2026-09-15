@@ -1,8 +1,10 @@
+package com.reliablecart.order.api.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;
 
 /**
+ * The request DTOs
  * One line of an order as the client sends it.
  * A record is a short way to write a class that only carries data. Java
  * generates the constructor,
@@ -16,7 +18,6 @@ import jakarta.validation.constraints.Positive;
  */
 public record OrderItemRequest(
 
-        @NotBlank(message = "productId must not be blank") String productId,
+@NotBlank(message="productId must not be blank")String productId,
 
-        @Positive(message = "quantity must be greater than zero") int quantity) {
-}
+@Positive(message="quantity must be greater than zero")int quantity){}
